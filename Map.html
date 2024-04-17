@@ -19,7 +19,9 @@
     </head>
 
    <body>
+      <div>
       <div id = "map" style = "width: 900px; height: 580px"></div>
+   </div>
       <script>
          // Creating map options
 
@@ -35,7 +37,6 @@
          var layer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png');
 
          navigator.geolocation.getCurrentPosition((data) => {
-            console.log(data.coords)
             map.setView({lat: data.coords.latitude, lng: data.coords.longitude})
             map.setZoom(17)
          }, () => {

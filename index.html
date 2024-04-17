@@ -14,17 +14,18 @@
   <meta name="msapplication-TileImage" content="images/hello-icon-144.png">
   <meta name="msapplication-TileColor" content="#FFFFFF">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="fullscreen">
-  <div class="container">
-    <h1 class="title">Hello World!</h1>
+<body class="flex items-center flex-col gap-4">
     <div class = "authors">
+        <p class="text-center text-2xl font-medium">Authors</p>
       <p>Łukasz Checiak s221540</p>
       <p>Markiian Holovchak s222558</p>
-    </div>
-    <div class =  "Map"><a href="Map.html"><button type = "button" name = "Map_button">Map</button></a></div>
-    <div class = "Sos"><a href="Sos.html"><button type = "button" name = "Sos_button">Vibrations</button></a></div>
   </div>
+  <div class="flex gap-2 justify-center">
+    <div class ="Map"><a href="Map.html"><button type = "button" name = "Map_button" class="bg-blue-400 rounded-md p-1">Map</button></a></div>
+    <div class ="Sos"><a href="Sos.html"><button type = "button" name = "Sos_button" class="bg-blue-400 rounded-md p-1">Vibrations</button></a></div>
+    </div>
   
   <script src="js/main.js"></script>
   
